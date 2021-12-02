@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <link rel="stylesheet" href="./styleCar.css" />
+    <title>Menu</title>
+  </head>
+
+  <body id="hide">
+    <div id="drag-container">
+      <div id="spin-container">
+        <!-- Add your images (or video) here -->
+
+        <img src="./images/webstyle.png" />
+        <img
+          onClick="myFunction2(); setTimeout(loadUrl3,1000)"
+          src="./images/yza.jpg"
+          role="button"
+          tabindex="0"
+          alt=""
+        />
+
+        <img src="./images/abc.jpg" alt="" />
+        <img
+          onClick="myFunction2(); setTimeout(loadUrl5,1000)"
+          role="button"
+          tabindex="0"
+          src="./images/recettes.png"
+          alt=""
+        />
+
+        <img
+          onClick="myFunction2(); setTimeout(loadUrl4,1000)"
+          role="button"
+          tabindex="0"
+          src="./images/whatwatch.png"
+          alt=""
+        />
+        <img
+          onClick="myFunction2(); setTimeout(loadUrl2,1000)"
+          role="button"
+          tabindex="0"
+          src="./images/drunkin-alien.png"
+          alt=""
+        />
+        <!-- <img
+          onClick="window.open('https://yayoulekyou.github.io/drunkin-alien/')"
+          role="button"
+          tabindex="0"
+          src="./images/drunkin-alien.png"
+          alt=""
+        /> -->
+        <img src="./images/yayou.png" alt="" />
+
+        <!-- Example image with link -->
+        <!-- <a
+          target="_blank"
+          href="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg"
+        >
+          <img
+            src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+        </a> -->
+
+        <!-- Example add video  -->
+        <!-- <video controls autoplay="autoplay" loop>
+          <source
+            src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761"
+            type="video/mp4"
+          />
+        </video> -->
+
+        <!-- Text at center of ground -->
+        <!-- <p>3D Tiktok Carousel</p> -->
+      </div>
+      <div id="ground"></div>
+    </div>
+
+    <div id="music-container"></div>
+
+    <div class="overlay">
+      <div class="text">
+        <ul>
+          <li class="active">
+            <a href="JavaScript:setTimeout(loadUrl,1000)" onclick="myFunction()"
+              >About me
+            </a>
+          </li>
+          <li><a href="./gallery.html" title="">My projects</a></li>
+          <li>
+            <a
+              href="https://yayoulekyou.github.io/game-menu-v2/index.html"
+              title=""
+              >Games</a
+            >
+          </li>
+          <li><a href="" title="">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function loadUrl() {
+        window.location.href = './index.html';
+      }
+    </script>
+    <script>
+      function loadUrl2() {
+        window.location.href =
+          'https://yayoulekyou.github.io/game-menu-v2/index.html';
+      }
+    </script>
+    <script>
+      function loadUrl3() {
+        window.location.href = 'https://yayoulekyou.github.io/yza1//';
+      }
+    </script>
+    <script>
+      function loadUrl4() {
+        window.location.href =
+          'https://yayoulekyou.github.io/pwa-app-mobile-film/';
+      }
+    </script>
+    <script>
+      function loadUrl5() {
+        window.location.href = 'https://yayoulekyou.github.io/recettes/';
+      }
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById('hide');
+        if (x.style.visibility === 'visible') {
+          x.style.visibility = 'visible';
+        } else {
+          x.style.visibility = 'hidden';
+          x.style.transition = '0.6s';
+          x.style.opacity = 0.1;
+          x.style.transform = 'scale(0.1)';
+        }
+      }
+    </script>
+    <script>
+      function myFunction2() {
+        var x = document.getElementById('hide');
+        if (x.style.visibility === 'visible') {
+          x.style.visibility = 'visible';
+        } else {
+          x.style.visibility = 'hidden';
+          x.style.transition = '0.8s';
+          x.style.opacity = 0.1;
+          x.style.transform = 'scale(3) translateY(120px)';
+        }
+      }
+    </script>
+
+    <script src="./scriptCar.js"></script>
+  </body>
+</html>
